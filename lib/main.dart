@@ -5,6 +5,8 @@ void main() {
   runApp(const MyApp());
 }
 
+const _urls = "https://blog.ummit.dev";
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -86,7 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
         },
       ),
     )
-    ..loadRequest(Uri.parse("https://blog.ummit.dev"));
+    ..loadRequest(Uri.parse(_urls));
 
   @override
   Widget build(BuildContext context) {
